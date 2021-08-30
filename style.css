@@ -1,0 +1,55 @@
+/* Global */
+
+:root {
+     /* Color */
+     --color-white: #ffffff;
+     --color-light-white: #eeeeee;
+     --color-grey: #616161;
+     --color-light-grey: #7c7979;
+     --color-blue: #2744e9;
+     --color-black: #0a09099d;
+   
+     /* Font size */
+     --font-large: 48px;
+     --font-medium: 28px;
+     --font-regular: 18px;
+     --font-small: 16px;
+     --font-micro: 14px;
+   
+     /* Font weight */
+     --weight-bold: 700;
+     --weight-semi-bold: 600;
+     --weight-regular: 400;
+}
+     /* Universal tags*/
+
+     /* Navbar */
+#navbar{
+    position: fixed;
+    /* 위에 고정시켜놓기 */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--color-black);
+}
+
+#navbar.navbar--dark{
+    background-color: var(--color-black);
+    padding: 8px;
+    
+  }
+  .navbar__menu__item{
+      display:flex;
+      
+  }
+  .navbar_logo{
+    font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+.navbar__menu__item{
+    padding: 8px 12px;
+    margin:0 4px;
+}
