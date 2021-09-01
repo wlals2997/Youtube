@@ -10,75 +10,118 @@
   
 </head>
 <body>
-    <!-- navbar -->
-   <nav id="navbar">
-       <div class="navbar_logo">
-           <a href="#"><i class="fab fa-youtube"></i>Youtube</a>
-       </div>
-       <div class="navbar__menu">
-        <ul class="navbar__menu">
-       <li class="navbar__menu__item active" data-link="#search"><i class="fas fa-search"></i></li>
-            <li class="navbar__menu__item " data-link="#menu" ><i class="fas fa-ellipsis-v"></i></li>
-        </ul>
-</div>
-   </nav>
-   <!-- navbar -->
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+        <span class="title">Youtube</span>
+    </div>
+    <div class="menuicons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+    </div>
+    </header>
+   <!-- header -->
+
    <!-- 메인동영상화면 -->
-   <div class="main"><iframe width="1280" height="720" src="https://www.youtube.com/embed/67stn7Pu7s4?list=PLv2d7VI9OotQ1F92Jp9Ce7ovHEsuRQB3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<section class="player">
+    <video  width="620" controls
+        poster="https://upload.wikimedia.org/wikipedia/commons/e/e8/Elephants_Dream_s5_both.jpg" >
+        <source
+          src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4"
+          type="video/mp4">
+</section>
     <!-- 메인동영상화면 -->
+
     <!-- 동영상타이틀, 아이콘, 유저 -->
-   <div class="video_description">
-   <div class="description">
-       <div class="hashtags
-       "><a href="#">#드림코딩엘리</a> <a href="#">#유튜브클론코딩</a></div>
-       
-   </div>
-   <div class="maintitle">클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
+    <div class="infoAndUpNext">
+  
+        <section class="info">
+            <div class="metadata">
+                <ul class="hashtags">
+                    <li>#DreamCoding</li>
+                    <li>#DreamCoding</li>
+                    <li>#Ellie</li>
+                </ul>
+  
+   <div class="maintitle">
+       <span class="titleclamp">클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
+    </span>
       <button class="maintitle_button"><i class="fas fa-sort-down"></i></button>
    </div>
-   <div class="info">
-       //시간
-   </div>
-   <div class="icons">
-       <ul class="icons_menu">
+   <span class="view">
+    1M view 1month ago
+   </span>
+
+  <!-- 영상버튼 -->
+         <ul class="icons_menu">
            <li class="icons_menu_item">
-            <i class="fas fa-thumbs-up">5</i>
+            <button><i class="fas fa-thumbs-up"></i><span>5</span></button>
            </li>
            <li class="icons_menu_item">
-            <i class="fas fa-thumbs-down">5</i>
+            <button>
+            <i class="fas fa-thumbs-down"></i><span>0</span></button>
            </li>
            <li class="icons_menu_item">
-            <i class="fas fa-share">5</i>
+               <button>
+            <i class="fas fa-share"></i><span>Share</span></button>
            </li>
            <li class="icons_menu_item">
-            <i class="fas fa-plus">5</i>
+               <button>
+            <i class="fas fa-plus"></i><span>Save</span></button>
            </li>
            <li class="icons_menu_item">
-            <i class="fas fa-flag">5</i>
+               <button>
+            <i class="fas fa-flag"></i><span>Report</span></button>
            </li>
        </ul>
    </div>
+   <!-- 채널 -->
    <div class="user_logo">
-       <img src="imgs/나.png" alt="user's profile">
-       <div class="user_name"><h2>coding developer</h2></div>
-       <div class="user_subscriber">구독자 10만 명</div>
-    <button class="user_subscribe">SUBSCRIBE</button>
+    <div class="metadata">
+       <img src="imgs/애플로그.jpeg" alt="user's profile">
+       <div class="user_name"><span class="name">developer</span></div>
+       <span class="user_subscriber">구독자 10만 명
+
+       </span>
+    </div>
+    <button class="user_subscribebtn">SUBSCRIBE</button>
    </div>
-</div>
+</seciton>
  <!-- 동영상타이틀, 아이콘, 유저 -->
+
  <!-- 다른동영상 -->
-<div class="other_video">
-<div class="upnext">Up next</div>
-<div class="other_videos">
-    <iframe width="826" height="480" src="https://www.youtube.com/embed/X91jsJyZofw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   
-<a href="#" class="othervideos_title">드림코딩엘리 다음영상</a>
-    <div class="video_other"><i class="fas fa-ellipsis-v"></i></div>
-
-</div>
-    <iframe width="826" height="480" src="https://www.youtube.com/embed/7neASrWEFEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div class="othervideo_title">드림코딩엘리 다음영상</div> <div class="video_other"><i class="fas fa-ellipsis-v"></i></div>
-    <iframe width="826" height="480" src="https://www.youtube.com/embed/wcsVjmHrUQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div class="othervideo_title">드림코딩엘리 다음영상</div> <div class="video_other"><i class="fas fa-ellipsis-v"></i></div>
-
+<section class="other_video">
+<span class="upnext">Up next</span>
+<ul>
+    <li class="item">
+        <div class="img"> <img src="imgs/123.JPG" alt="" /></div>
+        <div class="info">
+            <span class="title">하하하</span>
+            <span class="name">하하하</span>
+            <span class="views">5</span>
+        </div>
+        <button class="moreBtn"> <i class="fas fa-ellipsis-v"></i></button>
+    </li>
+    <li class="item">  
+        <div class="img"> <img src="imgs/제주도.png" alt=""/></div>
+        <div class="info">
+            <span class="title">abc</span>
+            <span class="name">abc</span>
+            <span class="views">5</span>
+        </div>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button></li>
+    <li class="item">
+        <div class="img">  <img src="imgs/A.jpg" alt=""/></div>
+        <div class="info">
+            <span class="title">abc</span>
+            <span class="name">abc</span>
+            <span class="views">5</span>
+        </div>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+    </li>
+</ul>
+</section>
 </div>
    <!-- 다른동영상 -->
 </body>
