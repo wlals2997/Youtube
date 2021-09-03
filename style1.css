@@ -93,7 +93,7 @@ body> .info{
         overflow: hidden;
         margin-right: var(--padding);
       }
-      .info .metadata .titleAndButton .title.clamp {
+      .info .metadata .titleAndButton .titleclamp {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
@@ -186,8 +186,8 @@ margin-top: var(--padding);
     margin-right: var(--padding);
 }
 .upnext .item .img img{
-width: 100%;
-}
+    width: 100%;
+    }
 .upnext .item .info{
 flex: 1 1 60%;
 }
@@ -206,6 +206,6 @@ flex:  1 1 5%;
     @media screen and (min-width: 768px) {
         .infoAndUpNext {
           flex-direction: row;
-          margin: : var(--padding) 0;
+          margin: var(--padding) 0;
         }
     }

@@ -4,125 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Youtube mobile</title>
-  
+    <script src="main1.js" defer></script>
+    <title>Youtube</title>
 </head>
 <body>
-    <!-- header -->
     <header>
         <div class="logo">
-            <i class="fab fa-youtube"></i>
-        <span class="title">Youtube</span>
-    </div>
-    <div class="menuicons">
-        <i class="fas fa-search"></i>
-        <i class="fas fa-ellipsis-v"></i>
+          <i class="fab fa-youtube"></i>
+          <span class="title">Youtube</span>
+        </div>
+<div class="icons">
+    <i class="fas fa-search"></i>
+    <i class="fas fa-ellipsis-v"></i>
     </div>
     </header>
-   <!-- header -->
 
-   <!-- 메인동영상화면 -->
-<section class="player">
-    <video  width="620" controls
-        poster="https://upload.wikimedia.org/wikipedia/commons/e/e8/Elephants_Dream_s5_both.jpg" >
-        <source
-          src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4"
-          type="video/mp4">
-</section>
-    <!-- 메인동영상화면 -->
 
-    <!-- 동영상타이틀, 아이콘, 유저 -->
-    <div class="infoAndUpNext">
+    <!-- Video Player -->
+    <section class="player">
+        <video  width="620" controls
+        poster="#" >
+        <source src="videos/Female artist sketching.mp4" type="video/mp4">
+    </section>
+        <!-- Video info & Up next -->
+        <div class="infoAndUpNext">
   
-        <section class="info">
+    <section class="info">
+        <div class="metadata">
+            <ul class="hashtags">
+                <li>#ballerina</li>
+                <li>#drawing</li>
+                <li>#female artist</li>
+            </ul>
+            <div class="titleAndButton">
+                <span class="title clamp">
+                    클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편: HTML, CSS, Javascriptdfadfadfafasfasdfafasfasfasdfaf
+                </span>
+                <button class="moreBtn clicked">
+                    <i class="fas fa-sort-down"></i>
+                </button>
+            </div>
+                <span class="views">1M view 1month ago</span>
+            
+        </div>
+        <ul class="actions">
+            <li>
+              <button>
+                <i class="active fas fa-thumbs-up"></i><span>1K</span>
+              </button>
+            </li>
+            <li>
+              <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+            </li>
+            <li>
+              <button><i class="fas fa-share"></i><span>Share</span></button>
+            </li>
+            <li>
+              <button><i class="fas fa-plus"></i><span>Save</span></button>
+            </li>
+            <li>
+              <button>
+                <i class="fab fa-font-awesome-flag"></i><span>Report</span>
+              </button>
+            </li>
+          </ul>
+        <!-- Channel Description -->
+        <div class="channel">
             <div class="metadata">
-                <ul class="hashtags">
-                    <li>#DreamCoding</li>
-                    <li>#DreamCoding</li>
-                    <li>#Ellie</li>
-                </ul>
-  
-   <div class="maintitle">
-       <span class="titleclamp">클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
-    </span>
-      <button class="maintitle_button"><i class="fas fa-sort-down"></i></button>
-   </div>
-   <span class="view">
-    1M view 1month ago
-   </span>
-
-  <!-- 영상버튼 -->
-         <ul class="icons_menu">
-           <li class="icons_menu_item">
-            <button><i class="fas fa-thumbs-up"></i><span>5</span></button>
-           </li>
-           <li class="icons_menu_item">
-            <button>
-            <i class="fas fa-thumbs-down"></i><span>0</span></button>
-           </li>
-           <li class="icons_menu_item">
-               <button>
-            <i class="fas fa-share"></i><span>Share</span></button>
-           </li>
-           <li class="icons_menu_item">
-               <button>
-            <i class="fas fa-plus"></i><span>Save</span></button>
-           </li>
-           <li class="icons_menu_item">
-               <button>
-            <i class="fas fa-flag"></i><span>Report</span></button>
-           </li>
-       </ul>
-   </div>
-   <!-- 채널 -->
-   <div class="user_logo">
-    <div class="metadata">
-       <img src="imgs/애플로그.jpeg" alt="user's profile">
-       <div class="user_name"><span class="name">developer</span></div>
-       <span class="user_subscriber">구독자 10만 명
-
-       </span>
+                <img src="imgs/애플로그.jpeg" alt="" />
+                <div class="info">
+                    <span class="name">creativity</span>
+                    <span class="subscribers">1M subscribers</span>
+                </div>
+            </div>
+            <button class="subscribe">subscribe</button>
+        </div>
+    </section>
+    <section class="upnext">
+        <span class="title">Up next</span>
+        <ul>
+            <li class="item">
+                <div class="img"> <img src="imgs/wave.jpeg" alt="" /></div>
+                <div class="info">
+                    <span class="title">wave</span>
+                    <span class="name">Engin Akyurt</span>
+                    <span class="views">5</span>
+                </div>
+                <button class="moreBtn"> <i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">  
+                <div class="img"> <img src="imgs/company.jpeg" alt=""/></div>
+                <div class="info">
+                    <span class="title">company</span>
+                    <span class="name">Christina Morillo</span>
+                    <span class="views">5</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button></li>
+            <li class="item">
+                <div class="img">  <img src="imgs/city.png" alt=""/></div>
+                <div class="info">
+                    <span class="title">Chicago</span>
+                    <span class="name">Nate</span>
+                    <span class="views">5</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+        </ul>
+    </section>
     </div>
-    <button class="user_subscribebtn">SUBSCRIBE</button>
-   </div>
-</seciton>
- <!-- 동영상타이틀, 아이콘, 유저 -->
-
- <!-- 다른동영상 -->
-<section class="other_video">
-<span class="upnext">Up next</span>
-<ul>
-    <li class="item">
-        <div class="img"> <img src="imgs/123.JPG" alt="" /></div>
-        <div class="info">
-            <span class="title">하하하</span>
-            <span class="name">하하하</span>
-            <span class="views">5</span>
-        </div>
-        <button class="moreBtn"> <i class="fas fa-ellipsis-v"></i></button>
-    </li>
-    <li class="item">  
-        <div class="img"> <img src="imgs/제주도.png" alt=""/></div>
-        <div class="info">
-            <span class="title">abc</span>
-            <span class="name">abc</span>
-            <span class="views">5</span>
-        </div>
-        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button></li>
-    <li class="item">
-        <div class="img">  <img src="imgs/A.jpg" alt=""/></div>
-        <div class="info">
-            <span class="title">abc</span>
-            <span class="name">abc</span>
-            <span class="views">5</span>
-        </div>
-        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-    </li>
-</ul>
-</section>
-</div>
-   <!-- 다른동영상 -->
 </body>
 </html>

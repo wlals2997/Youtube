@@ -85,17 +85,123 @@ body> .info{
   margin-right: var(--padding);
 
 }
-.info .metadata .maintitle{
+.info .metadata .titleAndButton{
   display: flex;
 }
-.info  .metadata .maintitle .title{
+.info  .metadata .titleAndButton .titleclamp{
   font-size: var(--font-medium);
       overflow: hidden;
       margin-right: var(--padding);
     }
-    .info .metadata .maintitle .title.clamp {
+    .info .metadata .titleAndButton .title.clamp {
+      /* css line clamp 컨텐츠 내용제한 */
       display: -webkit-box;
       -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 2;  /* 두줄제한 */
       overflow: hidden;
     }
+    .info .metadata .titleAndButton .moreBtn{
+      height: 100%;    /* 제일 위로 올라옴 */
+      transition: transform 300ms ease-in-out;
+  }
+  
+  .info .metadata .titleAndButton .moreBtn.clicked {
+    transform: rotate(180deg);
+  }
+  .views{
+    font-size: var(--font-medium);
+    color: var(--grey-dark-color);
+  }
+  .info .actions {
+    display: flex;
+    justify-content: space-around;
+    margin: var(--padding) 0;
+  }
+  
+  .info .actions button {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+  }
+  
+  .info .actions button i {
+    margin: 0 auto;
+    margin-bottom: var(--spacing-small);
+    font-size: var(--font-regular);
+  }
+  
+  .info .actions button i.active {
+    color: var(--blue-color);
+  }
+.info .channel{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--grey-dark-color);
+  border-bottom: 1px solid var(--grey-dark-color);
+}
+.channel .metadata{
+ display: flex;
+ align-items: center;
+}
+.channel .metadata img{
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+
+}
+.channel .metadata .info{
+  display: flex;
+  flex-direction: column;
+}
+.channel .metadata .info .subscribers{
+  color: var(--grey-dark-color);
+  font-size: var(--font-smale);
+}
+.channel .subscribe{
+  color: var(--red-color);
+}
+.upnext{
+  padding: 0 var(--padding);
+}
+.upnext > .title{
+  /* 바로 따라오는 아이들만 주기 위해서 */
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+  margin-bottom: 6px;
+}
+.upnext .item{
+  display: flex;
+  margin-top: var(--padding);
+}
+.upnext .item .img{
+  flex: 1 1 35%;
+  /* 사진, 제목, 버튼 위치비율 */
+  margin-right: var(--padding);
+}
+
+.upnext .item .img img{
+  width: 100%;
+  }
+.upnext .item .info{
+flex: 1 1 60%;
+}
+.upnext .item .moreBtn{
+flex:  1 1 5%;
+}
+.upnext .item .info{
+  display: flex;
+  flex-direction:  column;
+}
+.infoAndUpNext{
+  display: flex;
+  flex-direction: column;
+}
+
+  @media screen and (min-width: 768px) {
+      .infoAndUpNext {
+        flex-direction: row;   /* 양 옆으로 각각 배치 */
+        margin: var(--padding) 0;
+       
+      
+}
+  }
